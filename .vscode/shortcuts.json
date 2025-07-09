@@ -1,0 +1,11 @@
+[
+  {
+    "label": "theteelab",
+    "config": [
+      ""
+    ],
+    "odooBinPath": "c:\\Program Files\\Odoo 18.0.20250112\\server\\odoo-bin",
+    "odooConfPath": "c:\\Program Files\\Odoo 18.0.20250112\\server\\odoo.conf",
+    "active": true
+  }
+]
