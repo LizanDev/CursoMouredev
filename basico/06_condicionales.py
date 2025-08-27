@@ -2,13 +2,13 @@
 my_nomber = 0
 if my_nomber == 0:
     print("el numero el cero")
-elif my_nomber >0:
+elif my_nomber > 0:
     print("El numero es positivo")
 else:
     print("el numero es negativo")
 # 2. Solicita al usuario que ingrese su edad y muestra un mensaje indicando si es mayor de edad(18 aÃ±os o mÃ¡s) o menor de edad.
 my_age = int(input("Introduce tu edad: "))
-if my_age >=18:
+if my_age >= 18:
     print("Eres mayor de edad")
 else:
     print("Eres menor de edad")
@@ -18,7 +18,7 @@ if message == "":
     print("El mensaje esta vacio")
 else:
     print(message)
-# 4. Crea un programa que solicite dos nÃºmeros al usuario y compare cuÃ¡l es mayor. Si son iguales, muestra un mensaje indicando 
+# 4. Crea un programa que solicite dos nÃºmeros al usuario y compare cuÃ¡l es mayor. Si son iguales, muestra un mensaje indicando
 # la igualdad.
 number1 = int(input("Introduce el primer numero: "))
 number2 = int(input("Introduce el segundo numero: "))
@@ -30,11 +30,11 @@ else:
     print(f"Los numeros {number1} y {number2} son iguales")
 # 5. Escribe un programa que verifique si un nÃºmero es divisible por 3 y por 5 al mismo tiempo.
 number = int(input("Introduce un numero: "))
-if number %3 == 0 and number %5 == 0:
+if number % 3 == 0 and number % 5 == 0:
     print(f"El numero {number} es divisible por 3 y por 5")
 # 6. Solicita al usuario que ingrese un nÃºmero y verifica si es par o impar.
 number = int(input("Introduce un numero: "))
-if number %2 == 0:
+if number % 2 == 0:
     print(f"El numero {number} es par")
 else:
     print(f"El numero {number} es impar")
@@ -43,7 +43,7 @@ else:
 age = int(input("Introduce tu edad: "))
 if age >= 18:
     print("Puedes votar")
-elif age == 16 or age ==17:
+elif age == 16 or age == 17:
     print("Puedes votar con permiso espeial")
 else:
     print("No puedes votar")
@@ -61,9 +61,11 @@ if number >= 10 and number <= 20:
     print(f"El numero {number} esta entre 10 y 20")
 else:
     print(f"El numero {number} no esta entre 10 y 20")
-# 10. Escribe un programa que simule un semÃ¡foro: solicita al usuario que ingrese un color(rojo, amarillo, verde) y muestra un mensaje 
+# 10. Escribe un programa que simule un semÃ¡foro: solicita al usuario que ingrese un color(rojo, amarillo, verde) y muestra un mensaje
 # indicando si debe detenerse, estar alerta o avanzar.
-luz_semaforo = input ("Introduce el color del semaforo (rojo, amarillo, verde): ").lower()
+luz_semaforo = input(
+    "Introduce el color del semaforo (rojo, amarillo, verde): "
+).lower()
 if luz_semaforo == "rojo":
     print("Detente")
 elif luz_semaforo == "amarillo":

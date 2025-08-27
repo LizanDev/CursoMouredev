@@ -1,39 +1,78 @@
-# 1. Crea una lambda que sume dos nÃºmeros.
-suma = lambda x, y: x + y
-print(suma(5,3))
-# 2. Crea una lambda que calcule el cuadrado de un nÃºmero.
-cuadrado = lambda x: x**2
+# 1. Crea una función que sume dos números.
+def suma(x, y):
+    return x + y
+
+
+print(suma(5, 3))
+
+
+# 2. Crea una función que calcule el cuadrado de un número.
+def cuadrado(x):
+    return x**2
+
+
 print(cuadrado(4))
 
-# 3. Crea una lambda que devuelva el mayor de dos nÃºmeros.
-mayor = lambda x, y: x if x > y else y
-print(mayor(10,20))
 
-# 4. Crea una lambda que sume 10 a un nÃºmero dado.
-suma_diez = lambda x: x + 10
+# 3. Crea una función que devuelva el mayor de dos números.
+def mayor(x, y):
+    return x if x > y else y
+
+
+print(mayor(10, 20))
+
+
+# 4. Crea una función que sume 10 a un número dado.
+def suma_diez(x):
+    return x + 10
+
+
 print(suma_diez(5))
 
-# 5. Crea una lambda que devuelva el Ãºltimo carÃ¡cter de una cadena.
-ultimo_caracter = lambda cadena: cadena[-1] if cadena else None
+
+# 5. Crea una función que devuelva el último carácter de una cadena.
+def ultimo_caracter(cadena):
+    return cadena[-1] if cadena else None
+
+
 print(ultimo_caracter("Hola"))
 
-# 6. Crea una lambda que indique si una palabra tiene mÃ¡s de 6 letras.
-palabra_larga = lambda palabra: len(palabra) > 6
+
+# 6. Crea una función que indique si una palabra tiene más de 6 letras.
+def palabra_larga(palabra):
+    return len(palabra) > 6
+
+
 print(palabra_larga("prigramacion"))
 
-# 7. Crea una lambda que convierta una cadena a minÃºsculas.
-minusculas = lambda cadena: cadena.lower()
+
+# 7. Crea una función que convierta una cadena a minúsculas.
+def minusculas(cadena):
+    return cadena.lower()
+
+
 print(minusculas("HOLA MUNDO"))
 
-# 8. Crea una lambda que devuelva True si un nÃºmero es positivo.
-positivo = lambda x: x > 0
+
+# 8. Crea una función que devuelva True si un número es positivo.
+def positivo(x):
+    return x > 0
+
+
 print(positivo(-3))
 
-# 9. Crea una lambda que devuelva "Cadena vacÃ­a" si el string estÃ¡ vacÃ­o.
-cadena_vacia = lambda cadena: "Cadena vacia" if not cadena else cadena
+
+# 9. Crea una función que devuelva "Cadena vacía" si el string está vacío.
+def cadena_vacia(cadena):
+    return "Cadena vacia" if not cadena else cadena
+
+
 print(cadena_vacia(""))
 
-# 10. Crea una lambda que calcule el precio final con un impuesto aÃ±adido del 21%.
-precio_final = lambda precio: precio *1.21
-print(precio_final(200))
 
+# 10. Crea una función que calcule el precio final con un impuesto añadido del 21%.
+def precio_final(precio):
+    return precio * 1.21
+
+
+print(precio_final(200))

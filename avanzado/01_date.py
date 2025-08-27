@@ -1,4 +1,5 @@
-from datetime import time, datetime, date, timedelta
+from datetime import date, datetime, time, timedelta
+
 # 1. Crea una variable con la fecha y hora actual.
 now = datetime.now()
 print("Fecha y hora actual:", now)
@@ -12,13 +13,16 @@ print(fecha_especifica)
 hora_especifica = time(14, 30, 45)
 
 # 5. Calcula cuÃ¡ntos dÃ­as faltan para el 1 de enero del aÃ±o siguiente.
-fecha_siguiente = date(now.year +1,1,1)
+fecha_siguiente = date(now.year + 1, 1, 1)
 print(diferencia := fecha_siguiente - now.date())
+
 
 # 6. Crea una funciÃ³n que reciba una fecha y devuelva su timestamp.
 def obtener_timestamp(fecha):
     fecha = datetime(fecha.year, fecha.month, fecha.day)
     return fecha.timestamp()
+
+
 print(obtener_timestamp(fecha_especifica))
 
 # 7. Suma 30 dÃ­as a la fecha actual usando timedelta.
@@ -36,7 +40,7 @@ else:
     print(f"{fecha_especifica} no es anterior a {fecha_otra}")
 
 # 10. Crea una lista con varias fechas y ordÃ©nalas cronolÃ³gicamente.
-fechas = [date(2023,5,20), date(2022,3,15), date(2024,7,10)]
+fechas = [date(2023, 5, 20), date(2022, 3, 15), date(2024, 7, 10)]
 fechas.sort()
-for fecha in fechas:    
+for fecha in fechas:
     print(fecha)

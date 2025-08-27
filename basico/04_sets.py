@@ -1,5 +1,5 @@
 # 1. Crea un set con los nÃºmeros del 1 al 5 e imprÃ­melo.
-my_set = {1,2,3,4,5}
+my_set = {1, 2, 3, 4, 5}
 print(type(my_set))
 print(my_set)
 
@@ -23,21 +23,23 @@ my_set.clear()
 print(len(my_set))
 
 # 7. Convierte el set {"manzana", "naranja", "plÃ¡tano"} en una lista e imprime el primer elemento de la lista.
-fruit = {"manzana","naranja","platano"}
-fruit_list= list(fruit)
+fruit = {"manzana", "naranja", "platano"}
+fruit_list = list(fruit)
 print(type(fruit_list))
 print(fruit_list[0])
 
 # 8. Realiza la uniÃ³n de dos sets: {1, 2, 3} y {4, 5, 6}, e imprime el set resultante.
-my_set = {1,2,3}.union({4,5,6})
+my_set = {1, 2, 3}.union({4, 5, 6})
 print(my_set)  # Esto no es correcto, se debe usar el operador | o el mÃ©todo union()
 
 # 9. Calcula la diferencia entre los sets {1, 2, 3, 4} y {3, 4, 5, 6} e imprime el resultado.
-my_set1 = {1,2,3,4}
-my_set2 = {3,4,5,6}
+my_set1 = {1, 2, 3, 4}
+my_set2 = {3, 4, 5, 6}
 set_diference = my_set1.difference(my_set2)
-print(set_diference)  # Esto no es correcto, se debe usar el operador - o el mÃ©todo difference()
+print(
+    set_diference
+)  # Esto no es correcto, se debe usar el operador - o el mÃ©todo difference()
 
 # 10. Elimina un set llamado my_set usando del y luego intenta imprimirlo para ver el resultado.
 del my_set
-#print(my_set)  # Esto generará un error porque my_set ya no existe
+# print(my_set)  # Esto generará un error porque my_set ya no existe

@@ -1,4 +1,3 @@
-
 # 1. Declara una variable text con la frase â€œAprendiendo Pythonâ€ y luego imprime la longitud de la cadena usando len().
 text = "aprendiendo python"
 print(len(text))
@@ -32,13 +31,3 @@ print("12345".isnumeric())
 
 
 print("ñ á é í ó ú ü ¿ ¡")
-
-
-
-
-
-
-
-
-
-
